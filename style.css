@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+#logo{
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    left: 5px;
+    position: absolute;
+}
+
+.main_box{
+    background-image: url("ichigo-kurosaki-bleach-3840x2160-10512.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.btn_one {
+    color: #D3A388; 
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    line-height: 60px;
+    left: 20px;
+    cursor: pointer;
+    transition: all 0.3s linear ;
+}
+
+#check{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.sidebar_menu{
+    position: fixed;
+    left: -400px;
+    height: 100vh;
+    width: 330px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px  rgba(255, 255, 255, 0.5) ;
+    transition: all 0.3s linear ;
+    
+}
+
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 80px;
+    
+    box-shadow: 0px 2px 4px  rgba(255, 255, 255, 0.5) ;
+    height: 80px;
+}
+
+
+
+
+.sidebar_menu .menu{
+    color: #D3A388;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+  
+}
+
+.sidebar_menu  a{
+    color: #D3A388;
+}
+
+
+.logo a{
+    position: absolute;
+    left: 80px;
+    font-weight: 500px;
+    font-size: 20px;
+    color: #D3A388;
+}
+
+.btn_two i{
+    color: #D3A388;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 300px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s linear ;
+}
+.btn_two i:hover{
+        font-size: 35px;
+        color: #BC3903;
+}
+
+li{
+    padding: 10px 20px ;
+    margin-top: 6px;
+}
+
+li i,a{
+    padding-right: 6px;
+    font-size: 18px;
+}
+
+.sidebar_menu .social_media{
+    position: absolute;
+    bottom: 50px;
+    left: 25%;
+    
+}
+
+.sidebar_menu .social_media i {
+    color: #D3A388;
+    opacity: 0.5;
+    padding: 0px 5px;
+}
+
+.menu li:hover{
+    box-shadow: 0 0 4px  rgba(255, 255, 255, 0.5) ;
+ 
+}
+
+.btn_one:hover{
+   font-size: 40px;
+   color: #BC3903;
+}
+
+.sidebar_menu .social_media i:hover{
+    transform: scale(1.5);
+    opacity: 1;
+    color: #BC3903;
+}
+
+#check:checked~.sidebar_menu{
+    left: 0px;
+}
+#check:checked~.btn_one{
+    opacity: 0;
+}
+#check:checked~.sidebar_menu .btn_two i{
+        opacity: 1;
+}
